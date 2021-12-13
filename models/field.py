@@ -11,6 +11,6 @@ class Field(Enum):
         self.surrounding_bombs = surrounding_bombs
         self.type = type
  
-def __repr__(current_field: Field):
-    field_string = (f"{Field.type} - {Field.is_hidden} - {Field.surrounding_bombs}")
-    return field_string
+    def __repr__(self):
+        field_string = (f"{Field.type} - {Field.is_hidden} - {Field.surrounding_bombs}")
+        return field_string
